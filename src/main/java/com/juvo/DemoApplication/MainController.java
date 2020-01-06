@@ -1,0 +1,14 @@
+package com.juvo.DemoApplication;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class MainController {
+
+    @RequestMapping(value = "heartbeat")
+    public String heartbeat(){
+        return " ♥ \n  ♥ \n ♥ ";
+    }
+}
